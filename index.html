@@ -1,8 +1,161 @@
 <html>
     <head>
         <title>Sabrina's Portfolio</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
     </head>
-    <body>
-        <h1>testtttt</h1>
+    <body data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-container" tabindex="0">
+
+        <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+        <div class="flex-grow-1">
+            <ul id="list-example" class="spy-menu">
+                <li><a href="#home"><span>Home</span></a></li>
+                <li><a href="#about"><span>About</span></a></li>
+                <li><a href="#project"><span>Project</span></a></li>
+            </ul>
+
+            <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+                <header>
+                    <div>
+                        <nav class="nav nav-masthead d-flex justify-content-center">
+                            <a class="nav-link" href="Resume.pdf" download="Sabrina_Sabri_Resume.pdf">Resume</a>
+                            <a class="nav-link" href="https://wa.me/60102144381" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="nav-link" href="https://www.linkedin.com/in/sabrinamuhamadsabri" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                            <a class="nav-link" href="mailto:nrsbrn1910@gmial.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        </nav>
+                    </div>
+                </header>
+
+                <section class="px-3 my-auto text-center reveal home-container" id="home">
+                    <h1><span style="font-style:italic;">Hello,</span> I am Sabrina Sabri!</h1>
+                    <h4>Welcome! I’m a software engineer who enjoys building simple, reliable, and user-friendly solutions.</h4>         
+                </section>
+            </div>
+    
+            <section id="about" class="container section-container reveal">
+                <div class="about-header mb-5">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            I’m a software engineer with over <span id="experience"></span> of hands-on experience working with Laravel (PHP) and AWS, building systems that are both reliable and user-focused.
+                        </p>
+                        <p>
+                            I genuinely enjoy learning new things and staying curious, whether it's picking up a new technology or improving how I approach problem-solving. Coding isn’t just my job, it’s something I constantly want to get better at.
+                        </p>
+                        <p>
+                            I enjoy working with others, sharing ideas, and contributing to projects in meaningful ways. I’m always open to challenges and see them as a chance to grow and push myself further in the tech space.
+                        </p>
+                    </div>
+                    <!-- <div class="col-4">
+                    </div> -->
+                </div>
+            </section>
+
+            <section id="project" class="container section-container reveal">
+                <div class="project-header mb-5">
+                    <h1>Project</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4"><b><i>Smart Cabinet</i></b></h4>
+                                <p class="card-text" style="text-align:justify;">
+                                    A smart cabinet system for real-time asset tracking. It features an Android display for inventory status and secure biometric access using fingerprint, face recognition, and pulse authentication. Developed a dashboard for monitoring reports and managing asset data.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge rounded-pill bg-danger">Laravel</span>
+                                <span class="badge rounded-pill bg-info">PHP</span>
+                                <span class="badge rounded-pill" style="background-color:orangered;">HTML</span>
+                                <span class="badge rounded-pill bg-success">CSS</span>
+                                <span class="badge rounded-pill" style="background-color:blueviolet;">Boostrap</span>
+                                <span class="badge rounded-pill bg-warning">Javascript</span>
+                                <span class="badge rounded-pill bg-primary">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4"><b><i>KLIA2 Trolley Tracker</i></b></h4>
+                                <p class="card-text" style="text-align:justify;">
+                                    A dashboard for tracking airport trolleys at KLIA2, providing insights on trolley status, beacon data, tracking history, reports, and alerts such as missing units and low battery. The system uses BLE beacons attached to trolleys for real-time location tracking.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge rounded-pill bg-danger">Laravel</span>
+                                <span class="badge rounded-pill bg-info">PHP</span>
+                                <span class="badge rounded-pill" style="background-color:orangered;">HTML</span>
+                                <span class="badge rounded-pill bg-success">CSS</span>
+                                <span class="badge rounded-pill" style="background-color:blueviolet;">Boostrap</span>
+                                <span class="badge rounded-pill bg-warning">Javascript</span>
+                                <span class="badge rounded-pill bg-primary">MySQL</span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4"><b><i>MileSight Dashboard</i></b></h4>
+                                <p class="card-text" style="text-align:justify;">
+                                    A dashboard for monitoring IoT sensors such as people counting, environment, and odor detection with real-time data insights.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge rounded-pill bg-danger">Laravel</span>
+                                <span class="badge rounded-pill bg-info">PHP</span>
+                                <span class="badge rounded-pill" style="background-color:orangered;">HTML</span>
+                                <span class="badge rounded-pill bg-success">CSS</span>
+                                <span class="badge rounded-pill" style="background-color:blueviolet;">Boostrap</span>
+                                <span class="badge rounded-pill bg-warning">Javascript</span>
+                                <span class="badge rounded-pill bg-primary">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Jewelry Tracker</h5>
+                                <p class="card-text" style="text-align:justify;">
+                                    This is a short card.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge rounded-pill bg-dark">Cordova</span>
+                                <span class="badge rounded-pill" style="background-color:orangered;">HTML</span>
+                                <span class="badge rounded-pill bg-success">CSS</span>
+                                <span class="badge rounded-pill bg-warning">Javascript</span>
+                                <span class="badge rounded-pill bg-primary">MySQL</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer mt-auto py-3">
+            <div class="footer-container">
+                <span>Sabrina Sabri Portfolio © 2026 </span>
+
+                <div class="footer-link">
+                    <a href="https://wa.me/60102144381" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/sabrinamuhamadsabri" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a href="mailto:nrsbrn1910@gmial.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>            
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
     </body>
 </html>
